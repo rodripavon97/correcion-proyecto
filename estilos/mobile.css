@@ -1,0 +1,284 @@
+/* header */
+.hero{
+    width: 100%;
+    height: 100dvh;
+    background-color: var(--colorportada);
+    /* padding: .1px; */
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+
+/* header logo */
+
+
+/* header nav */
+nav{
+    display:flex;
+    width: 100%;
+    height: 50px;
+    background-color: var(--colornav);
+    flex-wrap: wrap;
+    position: fixed;
+    flex-grow: 1;
+    z-index: 10;
+    
+    /* cursor: url(../assets/truck_cursor.png) 0 0, pointer; */
+    /* padding: 5px; */
+   
+}
+nav a{
+    text-decoration: none;
+    text-transform:capitalize;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.logotef{
+    display:flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+
+.icon_menu{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.list_menu{
+    display: none;
+    
+}
+
+.fa-solid{
+    padding: 15px;
+}
+/* Que se cierre y se abra el menú, LO LOGRÉEEEE!! Felicitaciones Vikaaaaa*/
+#menu:target .list_menu{
+    display:flex;
+    flex-direction: column;
+    background-color:var(--colornav);
+    align-items: center;
+    gap:20px;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    margin: 0;
+    
+    
+
+}
+
+/* con esto hago que NO se vea el ícono de cierre */
+.close{
+    display:none;
+}
+
+/* cuando hago clic en el ícono de abrir, el ícono se deja de ver para que me muestra el ícono de cierre. Buscarle una transición */
+#menu:target .open{
+    display: none;
+}
+
+#menu:target .close{
+    display:block
+}
+/* portada */
+.portada{
+    /* flex-grow: 2; */
+    width: 100%;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+
+}
+
+/* de línea 101 a 149 estilos del h1, logo y wave */
+.title{
+    
+    width: 120px;
+    height: 120px; 
+    border-radius: 100%;
+    background-color: var(--colorlogo);
+    
+    position: absolute;
+    left:0;
+    right: 0;
+    bottom: 0;
+    top: -70%;
+    margin: auto;
+    
+}
+
+h1{
+    text-align: center;
+    align-self: center;
+    color: var(--colornav);
+
+}
+.subtitle{
+    font-size: 10px;
+    text-align: center;
+}
+.motto{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top:150px;
+    text-align: center;
+}
+
+.logotruck{
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    bottom: 40px;
+    background-image: url(../assets/truck_logo.png);
+    background-size: cover;
+}
+/* .logoimg{
+    height: 100%;
+    width: 100%;
+} */
+
+.wave{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+
+/* Section nuestra flota */
+
+.nuestra_flota{
+    position: relative;
+    background-color: var(--color_flota);
+    width: 100%;
+    min-height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+/* galería */
+
+.flota_container{
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+    /* align-content: space-between; */
+    justify-content: space-around;
+    /* align-items: baseline;*/
+}
+
+.flota_picture{
+    width: 200px;
+    height: 150px;
+    border-radius: 80px 0px 80px 15px / 28px 0px 28px 0px;
+    padding: 15px 1px;
+    position: relative;
+    justify-content: center;
+   
+    /* flex-grow: 1; hacer esto es lo mismo que hacer flex: y el valor del basis */
+}
+.flotatext{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    padding-right: 10px;
+    text-shadow: 5px black;
+}
+
+.flota_img{
+    width: 200px;
+    height: 150px;
+    border-radius: 15px 20px;
+    justify-content: center;
+
+}
+
+.waveflota{
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+}
+
+.description_flota{
+    background-color: var(--color_flotatext);
+    height: 700px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 160px;
+    background: rgb(110,110,110);
+    background: linear-gradient(0deg, rgba(110,110,110,1) 0%, rgba(255,225,225,1) 34%, rgba(110,110,110,1) 100%);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    position: relative;
+    bottom: 0;
+    
+}
+
+.logo_footer{
+    position: absolute;
+    display: flex;
+    width:150px ;
+    height: 100%;
+}
+.truck_footer{
+    height: 100%;
+    width: 140px;
+    position: absolute;    
+}
+
+.text_footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.links_footer{
+    height: 150px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    text-align: left;
+    padding: 10px 30px ; 
+}
+
+footer a{
+    display: block;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+
+}
+
+.hero2{
+    height: 50px;
+}
+
+form{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajá con nosotros </title>
+    <link rel="icon" type="image/vnd.icon" href="./assets/ícono.ico"><link>
+    <link rel="stylesheet" href="./estilos/style.css"><link>
+    <script src="https://kit.fontawesome.com/275d3faf2c.js"  crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="hero hero2">
+        <nav id="menu">
+            <div class="logotef">
+                <a href="#tef">Ttes. el federal</a>
+            </div>
+
+            <div class="icon_menu">
+                <a href="#menu" class="open" ><i class="fa-solid fa-bars" style="color:white"></i></a>
+                <a href="#" class="close"><i class="fa-solid fa-xmark" style="color:white"></i></a>
+            </div>
+            <ul class="list_menu">
+                <li><a href="./index.html#title">Inicio</a></li>
+                <li><a href="./index.html#nuestra_flota">Nuestra flota</a></li>
+                <li><a href="./index_2.html#quienes_somos" target="_blank">Quienes somos</a></li>
+                <li><a href="./index_2.html#contacto">Contacto</a></li>
+                <li><a href="./index_3.html#postulate">Trabajá con nosotros</a></li>
+           </ul>
+
+        </nav>
+        </header>
+
+        <main class="container-form">
+            <form  id="postulate" class="form_container">
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <article class="form-column">
+                        <label for="text">Nombre</label>
+                        <input type="" name="Ingrese nombre" id="ingresenombre">
+    
+                        <label for="text">Apellido</label>
+                        <input type="text" name="Apellido" id="Apellido">
+
+                    </article>
+
+                    <article class="form-row">
+                        <label for="text" class="label-date">Fecha de nacimiento</label>
+                        <input type="text" name="datebirth" id="datebirth">
+    
+                        <label for="text" class="label-cuil">CUIT/CUIL</label>
+                        <input type="text" name="cuit" id="cuit">
+
+                    </article>
+                </fieldset>
+
+                <fieldset class="experiencia-container">
+                    <legend>Experiencia</legend>
+                    <label for="text">¿Cuenta con experiencia en manejo de camiones?
+                        <input type="checkbox" name="si" id="si">Sí
+                        <input type="checkbox" name="no" id="no"> No
+                    </label>
+                    <label for="text">Cuéntenos acerca de su último empleo
+                    </label>
+                    <textarea type="text" name="experiencia" id="experiencia">
+                    </textarea>
+                    <br>
+                    <label for="target">Adjunte su CV</label>
+                    <input type="button" value="subir archivo">
+                </fieldset>
+                <fieldset>
+                    <legend>Información adicional</legend>
+                    <label for="text">¿Se encuentra habilitado para el transporte de cargas pesadas?</label>
+                    <input type="checkbox" name="sí" id="sí"> Sí
+                    <input type="checkbox" name="no" id="no">No
+
+                    <label for="text"></label>
+                </fieldset>
+            </form>
+        </main>
+
+    </body>
+    </html>

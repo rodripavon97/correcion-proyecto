@@ -1,0 +1,45 @@
+.logotruck{
+    width: 250px;
+  height: 200px;
+  display: flex;
+  background-image: url(../assets/truck_logo.png);
+  background-size: cover;
+  padding: 10px;
+  bottom: 60px;
+  position: absolute;
+}
+
+
+#nuestra_flota .nuestra_flota{
+    height: 100vh;
+    position: relative;
+    background-color: var(--color_flota);
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: -20px;
+}
+
+.flota_container{
+        position: absolute;
+        top: 50px;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       
+}
+
+
+.flota_img{
+    width: 250px;
+    height: 180px;
+    border-radius: 15px 20px;
+    justify-content: center;
+
+}
+
+

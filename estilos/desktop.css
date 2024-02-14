@@ -1,0 +1,68 @@
+.hero{
+    background-image: url(../assets/truck1.jpg);
+    background-size: cover;
+
+}
+
+.title{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 2px;
+}
+.title :hover{
+    scale: 1.2;
+    transition: 1s all;
+}
+h1{
+    font-size: 50px;
+}
+
+.motto{
+    position: absolute;
+    top: 15px;
+    color: white;
+}
+.logotruck{
+    display: none;
+}
+
+.wave{
+    display:none;
+}
+
+.flota_picture{
+    width: 350px;
+    height: 250px;
+}
+
+.flota_img{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    height: 200px;
+}
+
+.logo_footer{
+    width: 350px;
+    height: 200px;
+}
+.truck_footer{
+    width: 100%;
+    height: 90%;
+}
+
+.form_container{
+    align-self: center;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+label{
+    width: 100%;
+}

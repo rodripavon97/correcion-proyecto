@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Raleway:wght@100&display=swap');
+@import url(./normalize.css);
+@import url(./mobile.css); 
+@import url(./tablet.css) screen and (min-width: 600px);
+@import url(./desktop.css) screen and (min-width: 1020px);
+/* @import url(./mobile.css); */
+
+/* ajustes generales */
+
+:root{
+    --fonthtml:'Manrope', sans-serif;
+    --colorfont: white;
+    --colorportada:rgb(255, 165, 0);
+    --colornav: purple;
+    --colorlogo:rgb(241, 141, 241);
+    --color_flota:#ffffff;
+    --color_flotatext:rgb(255, 238, 0);
+    --color_qs:#282864;
+
+}
+
+html{
+    font-family: var(--fonthtml);
+    scroll-behavior: smooth;
+}
+
+#menu ul {
+    list-style: none;
+    
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form_container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap:1rem;
+}
+
+.form-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    
+}
+
+.label-date{
+    padding-left: 0.25rem;
+}
+
+.label-cuil{
+    padding-right: 0.25rem;
+}
+
+#experiencia{
+    width: 100%;
+}
+
+.experiencia-container{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
